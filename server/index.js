@@ -30,7 +30,6 @@ app.get("/transactions",async(req,res)=>{
                 });
                 return;
             }
-            console.log(data)
             res.send({
                 status: 200,
                 result: data
