@@ -14,7 +14,6 @@ export default function AllTransactions({ isEdit }) {
   useEffect(() => {
     (async () => {
       const { data } = await axiosInstance.get("/transactions");
-      console.log(data)
       setTransactionData(data.result);
     })();
   }, []);
@@ -111,6 +110,5 @@ export default function AllTransactions({ isEdit }) {
           })}
       </Table>
     </div>
-    // </Header>
   );
 }
