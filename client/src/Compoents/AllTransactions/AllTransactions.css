@@ -1,0 +1,17 @@
+.col{
+    background-color: aqua;
+}
+.addLink{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 72, 136);
+    padding: 8px;
+    border-radius: 8px;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .table{
+    margin-top: 20px;
+  }
