@@ -8,7 +8,6 @@ import LineChart from "../Chart/LineChart/LineChart";
 import PieChart from "../Chart/PieChart/PieChart";
 import Header from "../Header/Header";
 import axiosInstance from "../../helpers/axios";
-import { jwt_secret_key } from '../../config';
 
 let monthObj = {
   Jan: 0,
@@ -36,7 +35,7 @@ function App() {
         data.result.map((transData) => {
           let month = transData && moment(transData.transactionDate).format("MMM");
           let year = transData && +(moment(transData.transactionDate).format("YYYY"));
-          console.log(+(moment().format("YYYY")),year)
+
           if (monthObj.hasOwnProperty(month) && +(moment().format("YYYY")) === year)
             monthObj[month] += transData.amount;
         });
